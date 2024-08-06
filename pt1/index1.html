@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+    // function that accepts temp fahrenheit and returns it in celsius and kelvin
+
+    let tempFahrenheit = 85;
+
+    function tempConverter(Fahrenheit) {
+        let tempCelsius = Math.floor((Fahrenheit - 32) * 5/9);
+        let tempKelvin = Math.floor(tempCelsius + 273.15);
+        let todaysForcast = `The current temperature outside is ${Fahrenheit} degrees Fahrenheit, ${tempCelsius} degrees Celcius, and ${tempKelvin} degrees Kelvin.`;
+        return todaysForcast;
+    }
+    console.log(tempConverter(tempFahrenheit));
+    
+    // personalized greeting generator
+    
+    function sayGreeting(firstName, lastName, age, city) {
+    console.log(`Hello! My name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${city}. It's nice to meet you!`);
+    }
+    
+    const fName = "Garth";
+    const lName = "Pringle";
+    const age = 92;
+    const homeTown = "Tijuana";
+    
+    sayGreeting(fName, lName, age, homeTown);
+    
+    // various name modificiation commands
+
+    function nameMods(firstName, lastName) {
+    let initials = fName[0] + lName[0];
+    let nameLength = fName.length;
+    let allCaps = fName.toUpperCase();
+    let lowerCase = lName.toLowerCase();
+
+    console.log(initials, nameLength, allCaps, lowerCase)
+    }
+    
+    nameMods(fName, lName);
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
